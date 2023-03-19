@@ -1,0 +1,10 @@
+[user]
+	email = titanz@pm.me
+	name = titanz
+	signingKey = 5A3D0715FEDEC4AB5853D4AB7A1AB3507D9B734F
+[gpg]
+	program = qubes-gpg-client-wrapper
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = development
