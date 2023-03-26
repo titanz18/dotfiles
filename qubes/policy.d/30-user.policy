@@ -1,8 +1,8 @@
-qubes.SshAgent  +work  @anyvm  @anyvm ask default_target=sys-ssh-agent
-qubes.SshAgent +coding @anyvm  @anyvm ask default_target=sys-ssh-agent
+qubes.Gpg  *  personal sys-gpg ask        default_target=sys-gpg
+qubes.Gpg  *  coding  sys-gpg  ask        default_target=sys-gpg
+qubes.Gpg  *  @anyvm  @anyvm  deny
+qubes.SshAgent  +coding coding sys-ssh-agent ask default_target=sys-ssh-agent
 qubes.SshAgent  *      @anyvm  @anyvm deny
-qubes.UpdatesProxy  *  @tag:whonix-updatevm  @default  allow target=sys-whonix
+qubes.UpdatesProxy  *  @tag:whonix-updatevm  @default  allow  target=sys-whonix
 qubes.UpdatesProxy  *  @tag:whonix-updatevm  @anyvm    deny
-#qubes.UpdatesProxy  *  @type:TemplateVM      @default  allow target=cacher
-qubes.Gpg  *  @anyvm  @anyvm ask default_target=sys-gpg
 qubes.Syncthing  *  @anyvm  @anyvm  deny
